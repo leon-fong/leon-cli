@@ -10,6 +10,9 @@ devDependencies:
   bumpp:
     specifier: ^9.1.0
     version: 9.1.0
+  commander:
+    specifier: ^10.0.0
+    version: 10.0.0
   eslint:
     specifier: ^8.37.0
     version: 8.37.0
@@ -1312,6 +1315,11 @@ packages:
 
   /colorette@2.0.19:
     resolution: {integrity: sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==}
+    dev: true
+
+  /commander@10.0.0:
+    resolution: {integrity: sha512-zS5PnTI22FIRM6ylNW8G4Ap0IEOyk62fhLSD0+uHRT9McRCLGpkVNvao4bjimpK/GShynyQkFFxHhwMcETmduA==}
+    engines: {node: '>=14'}
     dev: true
 
   /commondir@1.0.1:

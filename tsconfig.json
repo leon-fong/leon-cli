@@ -9,6 +9,7 @@
     "strict": true,
     "strictNullChecks": true,
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true
+    "skipDefaultLibCheck": true,
+    "resolveJsonModule": true
   }
 }
