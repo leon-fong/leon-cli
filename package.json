@@ -1,22 +1,42 @@
 {
-  "name": "leon-cli",
+  "name": "@leonfong/leon",
   "version": "1.0.0",
   "description": "",
   "author": "Leon Fong <ooohmydawn@hotmail.com>",
   "license": "MIT",
-  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "leon": "dist/index.mjs"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsup src/index.ts",
+    "dev": "tsx src/index.ts",
+    "stub": "unbuild --stub",
+    "build": "unbuild",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "vitest"
+    "test": "vitest",
+    "release": "bumpp && npm publish"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.2",
     "@types/node": "^18.15.11",
+    "bumpp": "^9.1.0",
     "eslint": "^8.37.0",
-    "tsup": "^6.7.0",
+    "tsx": "^3.12.6",
     "typescript": "^5.0.3",
+    "unbuild": "^1.2.0",
     "vitest": "^0.29.8"
   }
 }
