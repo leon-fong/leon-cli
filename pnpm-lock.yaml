@@ -22,6 +22,9 @@ devDependencies:
   kleur:
     specifier: ^4.1.5
     version: 4.1.5
+  sisteransi:
+    specifier: ^1.0.5
+    version: 1.0.5
   tsx:
     specifier: ^3.12.6
     version: 3.12.6
